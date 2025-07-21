@@ -1,0 +1,20 @@
+# SSTK version 0.8.0
+# 6
+mtllib original-6.mtl
+o Component_14_1/Component_14/mesh3/mesh3-geometry#mesh3-geometry
+v 0.426016 0.811235 0.385389
+v 0.399318 -0.803259 0.385389
+v 0.426016 -0.803259 0.385389
+v 0.399318 0.811235 0.385389
+vt 0.020833 1.259846
+vt 0 0
+vt 0.020833 0
+vt 0 1.259846
+vn 0 0 1
+vn 0 0 -1
+usemtl material_0_0
+f 1/1/1 2/2/1 3/3/1
+f 2/2/1 1/1/1 4/4/1
+usemtl material_1_0
+f 3//2 2//2 1//2
+f 4//2 1//2 2//2

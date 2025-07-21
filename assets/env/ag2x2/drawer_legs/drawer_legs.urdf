@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<robot name="drawer_legs_merged">
+    <link name="robot_base">
+        <inertial>
+            <mass value="1.0" />
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="1" iyy="1" izz="1" ixy="0" ixz="0" iyz="0" />
+        </inertial>
+    </link>
+    <link name="merged_leg_1">
+        <visual>
+            <origin xyz="0.102814 0.105409 0.053254" rpy="3.141221 3.141273 3.141593" />
+            <geometry>
+                <cylinder radius="0.00432" length="0.106" />
+            </geometry>
+            <material name="robot_base_material">
+                <color rgba="0.8 0.8 0.8 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.102814 0.105409 0.053254" rpy="3.141221 3.141273 3.141593" />
+            <geometry>
+                <cylinder radius="0.00432" length="0.106" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="merged_leg_2">
+        <visual>
+            <origin xyz="-0.102815 0.105415 0.053319" rpy="3.141221 3.141273 3.141593" />
+            <geometry>
+                <cylinder radius="0.00432" length="0.106" />
+            </geometry>
+            <material name="robot_base_material">
+                <color rgba="0.8 0.8 0.8 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.102815 0.105415 0.053319" rpy="3.141221 3.141273 3.141593" />
+            <geometry>
+                <cylinder radius="0.00432" length="0.106" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="merged_leg_3">
+        <visual>
+            <origin xyz="-0.102820 -0.105404 0.053397" rpy="3.141221 3.141273 3.141593" />
+            <geometry>
+                <cylinder radius="0.00432" length="0.106" />
+            </geometry>
+            <material name="robot_base_material">
+                <color rgba="0.8 0.8 0.8 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.102820 -0.105404 0.053397" rpy="3.141221 3.141273 3.141593" />
+            <geometry>
+                <cylinder radius="0.00432" length="0.106" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="merged_leg_4">
+        <visual>
+            <origin xyz="0.102812 -0.105405 0.053331" rpy="3.141221 3.141273 3.141593" />
+            <geometry>
+                <cylinder radius="0.00432" length="0.106" />
+            </geometry>
+            <material name="robot_base_material">
+                <color rgba="0.8 0.8 0.8 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.102812 -0.105405 0.053331" rpy="3.141221 3.141273 3.141593" />
+            <geometry>
+                <cylinder radius="0.00432" length="0.106" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint_leg_1" type="fixed">
+        <parent link="robot_base"/>
+        <child link="merged_leg_1"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+    <joint name="joint_leg_2" type="fixed">
+        <parent link="robot_base"/>
+        <child link="merged_leg_2"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+    <joint name="joint_leg_3" type="fixed">
+        <parent link="robot_base"/>
+        <child link="merged_leg_3"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+    <joint name="joint_leg_4" type="fixed">
+        <parent link="robot_base"/>
+        <child link="merged_leg_4"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+</robot>

@@ -1,0 +1,15 @@
+<mujoco model="floor">
+
+    <compiler inertiafromgeom="auto" angle="radian"/>
+
+    <asset>
+        <material name="floor_material" rgba=".0 .0 .0 1." reflectance="1" shininess="1"/>
+    </asset>
+    
+    <worldbody>
+        <body name="floor" pos="0 0 0">
+            <geom material="floor_material" pos="0 0 0" size="10. 10. 0.01" type="box"/>
+        </body>
+    </worldbody>
+
+</mujoco>

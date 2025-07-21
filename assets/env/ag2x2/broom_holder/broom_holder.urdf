@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot name="broom_holder">
+    <link name="robot_base">
+        <inertial>
+            <origin xyz="0 0 0.250004" rpy="-3.141593 3.141593 -3.141593" />
+            <inertia ixx="0.041666664866109" ixy="0.0" ixz="0.0" iyz="0.0" izz="0.0083333333224678" iyy="0.041666664866109" />
+            <mass value="4.9999995231628" />
+        </inertial>
+        <collision name="broom_holder">
+            <origin xyz="0 0 0.250004" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <box size="0.100000 0.100000 0.500000" />
+            </geometry>
+        </collision>
+        <visual name="broom_holder">
+            <origin xyz="0 0 0.250004" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <box size="0.100000 0.100000 0.500000" />
+            </geometry>
+            <material name="robot_base_material">
+                <color rgba="0.350000 0.480000 0.540000 1.0" />
+            </material>
+        </visual>
+    </link>
+</robot>

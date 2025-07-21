@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<robot name="broom">
+    <link name="broom_body">
+        <inertial>
+            <origin xyz="0.000059 -0.098607 0.074060" rpy="3.141299 3.558271 1.570976" />
+            <inertia ixz="0" ixy="0" ixx="1" izz="1" iyz="0" iyy="0.3" />
+            <mass value="10" />
+        </inertial>
+        <collision name="broom1">
+            <origin xyz="0.000677 0.01584 0.321189" rpy="2.705260 3.141593 3.141593" />
+            <geometry>
+                <box size="0.011250 0.011250 0.600000" />
+            </geometry>
+        </collision>
+        <collision name="broom2">
+            <origin xyz="-0.000068 -0.122151 0.023222" rpy="3.141592 3.141593 3.141592" />
+            <geometry>
+                <box size="0.262500 0.037500 0.037500" />
+            </geometry>
+        </collision>
+        <visual name="sweep_to_dustpan_broom_visual">
+            <origin xyz="-0.000062 0.000863 0.304031" rpy="-3.141479 3.544896 1.570849" />
+            <geometry>
+                <mesh filename="broom_sweep_to_dustpan_broom_visual_vis_1.dae" />
+            </geometry>
+            <material name="sweep_to_dustpan_broom_visual_material">
+                <color rgba="0 0.5 1 1" />
+            </material>
+        </visual>
+    </link>
+</robot>

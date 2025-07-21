@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="box_robot">
+  <link name="box_body">
+    <inertial>
+      <mass value="20.0"/>  <!-- Mass of the box -->
+      <inertia ixx="0.485" iyy="0.135" izz="0.485" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.2 0.5 0.2"/> <!-- Box dimensions -->
+      </geometry>
+      <material name="pink">
+        <color rgba="0.75 0.5 0.75 1"/>  <!-- Light purple color -->
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.2 0.5 0.2"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

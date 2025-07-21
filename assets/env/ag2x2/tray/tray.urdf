@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot name="tray">
+    <link name="tray_body">
+        <inertial>
+            <origin xyz="0 0 0" rpy="-3.141591 3.141624 3.117158" />
+            <inertia ixx="1.0803" iyy="1.4475" izz="0.3688" ixy="0.0" ixz="0.0" iyz="0.0"/>
+            <mass value="10" />
+        </inertial>
+        <collision name="tray">
+            <origin xyz="0 0 0" rpy="-3.141591 3.141624 3.117158" />
+            <geometry>
+                <box size="0.210000 0.360000 0.006000" />
+            </geometry>
+        </collision>
+        <visual name="tray_visual">
+            <origin xyz="0 0 0" rpy="-1.567356 1.571413 -0.000513" />
+            <geometry>
+                <mesh filename="tray_tray_visual_vis_1.dae" />
+            </geometry>
+            <material name="tray_visual_material">
+                <color rgba="0.500000 0.500000 0.500000 1.0" />
+            </material>
+        </visual>
+    </link>
+</robot>

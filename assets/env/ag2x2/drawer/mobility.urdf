@@ -1,0 +1,543 @@
+<?xml version="1.0"?>
+<robot name="drawer_frame">
+    <link name="robot_base">
+        <visual name="drawer_frame">
+            <origin xyz="0.274931 -0.248061 0.463991" rpy="3.141247 3.141965 -3.141592" />
+            <geometry>
+                <box size="0.375000 0.375000 0.007500" />
+            </geometry>
+            <material name="robot_base_material">
+                <color rgba="0.720000 0.624000 0.480000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_frame">
+            <origin xyz="0.275069 -0.248189 0.094991" rpy="3.141247 3.141965 -3.141592" />
+            <geometry>
+                <box size="0.375000 0.375000 0.007500" />
+            </geometry>
+            <material name="robot_base_material">
+                <color rgba="0.720000 0.624000 0.480000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_frame">
+            <origin xyz="0.087500 -0.248125 0.279421" rpy="0.746314 4.711880 -0.746314" />
+            <geometry>
+                <box size="0.375000 0.375000 0.007500" />
+            </geometry>
+            <material name="robot_base_material">
+                <color rgba="0.720000 0.624000 0.480000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_frame">
+            <origin xyz="0.462500 -0.248125 0.279561" rpy="0.746314 4.711880 -0.746314" />
+            <geometry>
+                <box size="0.375000 0.375000 0.007500" />
+            </geometry>
+            <material name="robot_base_material">
+                <color rgba="0.720000 0.624000 0.480000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_frame">
+            <origin xyz="0.275000 -0.435625 0.279556" rpy="2.316376 4.711880 -0.745580" />
+            <geometry>
+                <box size="0.375000 0.375000 0.007500" />
+            </geometry>
+            <material name="robot_base_material">
+                <color rgba="0.720000 0.624000 0.480000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_legs">
+            <origin xyz="0.458100 -0.427075 0.044959" rpy="-3.141222 3.141912 1.570796" />
+            <geometry>
+                <cylinder radius="0.0075000002980232" length="0.092999994754791" />
+            </geometry>
+            <material name="drawer_legs_material">
+                <color rgba="0.800000 0.800000 0.800000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_legs">
+            <origin xyz="0.458108 -0.070082 0.044843" rpy="-3.141222 3.141912 1.570796" />
+            <geometry>
+                <cylinder radius="0.0075000002980232" length="0.092999994754791" />
+            </geometry>
+            <material name="drawer_legs_material">
+                <color rgba="0.800000 0.800000 0.800000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_legs">
+            <origin xyz="0.092100 -0.070075 0.044708" rpy="-3.141222 3.141912 1.570796" />
+            <geometry>
+                <cylinder radius="0.0075000002980232" length="0.092999994754791" />
+            </geometry>
+            <material name="drawer_legs_material">
+                <color rgba="0.800000 0.800000 0.800000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_legs">
+            <origin xyz="0.092100 -0.427075 0.044823" rpy="-3.141222 3.141912 1.570796" />
+            <geometry>
+                <cylinder radius="0.0075000002980232" length="0.092999994754791" />
+            </geometry>
+            <material name="drawer_legs_material">
+                <color rgba="0.800000 0.800000 0.800000 1.0" />
+            </material>
+        </visual>
+
+        <collision name="drawer_frame">
+            <origin xyz="0.274931 -0.248061 0.463991" rpy="3.141247 3.141965 -3.141592" />
+            <geometry>
+                <box size="0.375000 0.375000 0.007500" />
+            </geometry>
+        </collision>
+        <collision name="drawer_frame">
+            <origin xyz="0.275069 -0.248189 0.094991" rpy="3.141247 3.141965 -3.141592" />
+            <geometry>
+                <box size="0.375000 0.375000 0.007500" />
+            </geometry>
+        </collision>
+        <collision name="drawer_frame">
+            <origin xyz="0.087500 -0.248125 0.279421" rpy="0.746314 4.711880 -0.746314" />
+            <geometry>
+                <box size="0.375000 0.375000 0.007500" />
+            </geometry>
+        </collision>
+        <!-- <collision name="drawer_frame">
+            <origin xyz="0.462500 -0.248125 0.279561" rpy="0.746314 4.711880 -0.746314" />
+            <geometry>
+                <box size="0.375000 0.375000 0.007500" />
+            </geometry>
+        </collision>
+        <collision name="drawer_frame">
+            <origin xyz="0.275000 -0.435625 0.279556" rpy="2.316376 4.711880 -0.745580" />
+            <geometry>
+                <box size="0.375000 0.375000 0.007500" />
+            </geometry>
+        </collision> -->
+        <!-- <collision name="drawer_legs">
+            <origin xyz="0.458100 -0.427075 0.044959" rpy="-3.141222 3.141912 1.570796" />
+            <geometry>
+                <cylinder radius="0.0075000002980232" length="0.092999994754791" />
+            </geometry>
+        </collision> -->
+        <!-- <collision name="drawer_legs">
+            <origin xyz="0.458108 -0.070082 0.044843" rpy="-3.141222 3.141912 1.570796" />
+            <geometry>
+                <cylinder radius="0.0075000002980232" length="0.092999994754791" />
+            </geometry>
+        </collision>
+        <collision name="drawer_legs">
+            <origin xyz="0.092100 -0.070075 0.044708" rpy="-3.141222 3.141912 1.570796" />
+            <geometry>
+                <cylinder radius="0.0075000002980232" length="0.092999994754791" />
+            </geometry>
+        </collision>
+        <collision name="drawer_legs">
+            <origin xyz="0.092100 -0.427075 0.044823" rpy="-3.141222 3.141912 1.570796" />
+            <geometry>
+                <cylinder radius="0.0075000002980232" length="0.092999994754791" />
+            </geometry>
+        </collision> -->
+    </link>
+    <joint name="drawer_joint_bottom" type="prismatic">
+        <axis xyz="0 0 1" />
+        <limit effort="112.5" velocity="15.0" lower="0.0" upper="0.30000001192093" />
+        <parent link="robot_base" />
+        <child link="drawer_bottom" />
+        <origin xyz="0.275043 -0.248161 0.124993" rpy="-1.570451 3.141221 -0.000000" />
+    </joint>
+    <link name="drawer_bottom">
+        <inertial>
+            <origin rpy="-3.141588 3.141567 -1.570796" xyz="-0.000004 0.011870 0.010526" />
+            <inertia ixx="0.011209496066089" ixy="4.0704043961733e-13" ixz="-1.4456290982822e-05" iyz="-2.8206538680196e-12" izz="0.0061737879202848" iyy="0.0059830438703822" />
+            <mass value="0.33750000596046" />
+        </inertial>
+	<!-- <collision name="drawer_bottom">
+            <origin xyz="-0.000005 0.036011 -0.164999" rpy="3.141588 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+        </collision>
+        <collision name="drawer_bottom">
+            <origin xyz="-0.000004 -0.019484 0.009002" rpy="-1.570771 3.141598 0.000001" />
+            <geometry>
+                <box size="0.367500 0.356250 0.007125" />
+            </geometry>
+        </collision>
+        <collision name="drawer_bottom">
+            <origin xyz="-0.180004 0.036016 0.009001" rpy="-1.570801 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+        </collision>
+        <collision name="drawer_bottom">
+            <origin xyz="0.179996 0.036016 0.009000" rpy="-1.570801 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+        </collision>
+        <collision name="drawer_bottom">
+            <origin xyz="-0.033003 0.041270 0.193501" rpy="-1.570771 3.141598 0.000001" />
+            <geometry>
+                <box size="0.007500 0.012000 0.007500" />
+            </geometry>
+        </collision>
+        <collision name="drawer_bottom">
+            <origin xyz="-0.000003 0.040521 0.204001" rpy="-1.570791 3.141567 -1.570797" />
+            <geometry>
+                <cylinder radius="0.0074999998323619" length="0.075000002980232" />
+            </geometry>
+        </collision>
+        <collision name="drawer_bottom">
+            <origin xyz="0.032997 0.041270 0.193500" rpy="-1.570771 3.141598 0.000001" />
+            <geometry>
+                <box size="0.007500 0.012000 0.007500" />
+            </geometry>
+        </collision>
+        <collision name="drawer_bottom">
+            <origin xyz="-0.000003 0.036020 0.184500" rpy="3.141588 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+	</collision> -->
+        <visual name="drawer_bottom">
+            <origin xyz="-0.000005 0.036011 -0.164999" rpy="3.141588 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+            <material name="drawer_bottom_material">
+                <color rgba="0.860000 0.812000 0.740000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_bottom">
+            <origin xyz="-0.000004 -0.019484 0.009002" rpy="-1.570771 3.141598 0.000001" />
+            <geometry>
+                <box size="0.367500 0.356250 0.007125" />
+            </geometry>
+            <material name="drawer_bottom_material">
+                <color rgba="0.860000 0.812000 0.740000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_bottom">
+            <origin xyz="-0.180004 0.036016 0.009001" rpy="-1.570801 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+            <material name="drawer_bottom_material">
+                <color rgba="0.860000 0.812000 0.740000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_bottom">
+            <origin xyz="0.179996 0.036016 0.009000" rpy="-1.570801 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+            <material name="drawer_bottom_material">
+                <color rgba="0.860000 0.812000 0.740000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_bottom">
+            <origin xyz="-0.033003 0.041270 0.193501" rpy="-1.570771 3.141598 0.000001" />
+            <geometry>
+                <box size="0.007500 0.012000 0.007500" />
+            </geometry>
+            <material name="drawer_bottom_material">
+                <color rgba="0.850000 0.850000 0.850000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_bottom">
+            <origin xyz="-0.000003 0.040521 0.204001" rpy="-1.570791 3.141567 -1.570797" />
+            <geometry>
+                <cylinder radius="0.0074999998323619" length="0.075000002980232" />
+            </geometry>
+            <material name="drawer_bottom_material">
+                <color rgba="0.700000 0.700000 0.700000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_bottom">
+            <origin xyz="0.032997 0.041270 0.193500" rpy="-1.570771 3.141598 0.000001" />
+            <geometry>
+                <box size="0.007500 0.012000 0.007500" />
+            </geometry>
+            <material name="drawer_bottom_material">
+                <color rgba="0.850000 0.850000 0.850000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_bottom">
+            <origin xyz="-0.000003 0.036020 0.184500" rpy="3.141588 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+            <material name="drawer_bottom_material">
+                <color rgba="0.860000 0.810000 0.760000 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint name="drawer_joint_middle" type="prismatic">
+        <axis xyz="0 0 1" />
+        <limit effort="112.5" velocity="15.0" lower="0.0" upper="0.30000001192093" />
+        <parent link="robot_base" />
+        <child link="drawer_middle" />
+        <origin xyz="0.275002 -0.248124 0.243562" rpy="-1.570449 3.141220 -0.000002" />
+    </joint>
+    <link name="drawer_middle">
+        <inertial>
+            <origin rpy="-3.141580 3.141567 -1.570795" xyz="-0.000007 0.013365 0.010518" />
+            <inertia ixx="0.011209496066089" ixy="4.0704043961733e-13" ixz="-1.4456290982822e-05" iyz="-2.8206538680196e-12" izz="0.0061737879202848" iyy="0.0059830438703822" />
+            <mass value="0.33750000596046" />
+        </inertial>
+	<!-- <collision name="drawer_middle">
+            <origin xyz="-0.000009 0.037507 -0.165007" rpy="3.141580 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+        </collision>
+        <collision name="drawer_middle">
+            <origin xyz="-0.000007 -0.017989 0.008994" rpy="-1.570771 3.141605 0.000001" />
+            <geometry>
+                <box size="0.367500 0.356250 0.007125" />
+            </geometry>
+        </collision>
+        <collision name="drawer_middle">
+            <origin xyz="-0.180007 0.037511 0.008995" rpy="-1.570809 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+        </collision>
+        <collision name="drawer_middle">
+            <origin xyz="0.179993 0.037511 0.008990" rpy="-1.570809 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+        </collision>
+        <collision name="drawer_middle">
+            <origin xyz="-0.033004 0.042766 0.193493" rpy="-1.570771 3.141605 0.000001" />
+            <geometry>
+                <box size="0.007500 0.012000 0.007500" />
+            </geometry>
+        </collision>
+        <collision name="drawer_middle">
+            <origin xyz="-0.000004 0.042016 0.203993" rpy="-1.570784 3.141567 -1.570797" />
+            <geometry>
+                <cylinder radius="0.0074999998323619" length="0.075000002980232" />
+            </geometry>
+        </collision>
+        <collision name="drawer_middle">
+            <origin xyz="0.032995 0.042766 0.193492" rpy="-1.570771 3.141605 0.000001" />
+            <geometry>
+                <box size="0.007500 0.012000 0.007500" />
+            </geometry>
+        </collision>
+        <collision name="drawer_middle">
+            <origin xyz="-0.000005 0.037516 0.184492" rpy="3.141580 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+	</collision> -->
+        <visual name="drawer_middle">
+            <origin xyz="-0.000009 0.037507 -0.165007" rpy="3.141580 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+            <material name="drawer_middle_material">
+                <color rgba="0.860000 0.812000 0.740000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_middle">
+            <origin xyz="-0.000007 -0.017989 0.008994" rpy="-1.570771 3.141605 0.000001" />
+            <geometry>
+                <box size="0.367500 0.356250 0.007125" />
+            </geometry>
+            <material name="drawer_middle_material">
+                <color rgba="0.860000 0.812000 0.740000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_middle">
+            <origin xyz="-0.180007 0.037511 0.008995" rpy="-1.570809 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+            <material name="drawer_middle_material">
+                <color rgba="0.860000 0.812000 0.740000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_middle">
+            <origin xyz="0.179993 0.037511 0.008990" rpy="-1.570809 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+            <material name="drawer_middle_material">
+                <color rgba="0.860000 0.812000 0.740000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_middle">
+            <origin xyz="-0.033004 0.042766 0.193493" rpy="-1.570771 3.141605 0.000001" />
+            <geometry>
+                <box size="0.007500 0.012000 0.007500" />
+            </geometry>
+            <material name="drawer_middle_material">
+                <color rgba="0.850000 0.850000 0.850000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_middle">
+            <origin xyz="-0.000004 0.042016 0.203993" rpy="-1.570784 3.141567 -1.570797" />
+            <geometry>
+                <cylinder radius="0.0074999998323619" length="0.075000002980232" />
+            </geometry>
+            <material name="drawer_middle_material">
+                <color rgba="0.700000 0.700000 0.700000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_middle">
+            <origin xyz="0.032995 0.042766 0.193492" rpy="-1.570771 3.141605 0.000001" />
+            <geometry>
+                <box size="0.007500 0.012000 0.007500" />
+            </geometry>
+            <material name="drawer_middle_material">
+                <color rgba="0.850000 0.850000 0.850000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_middle">
+            <origin xyz="-0.000005 0.037516 0.184492" rpy="3.141580 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+            <material name="drawer_middle_material">
+                <color rgba="0.860000 0.812000 0.740000 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint name="drawer_joint_top" type="prismatic">
+        <axis xyz="0 0 1" />
+        <limit effort="50" velocity="3.0" lower="0.0" upper="0.30000001192093" />
+        <parent link="robot_base" />
+        <child link="drawer_top" />
+        <origin xyz="0.274961 -0.248090 0.365083" rpy="-1.570445 3.141215 -0.000006" />
+    </joint>
+    <link name="drawer_top">
+        <inertial>
+            <origin rpy="-3.141587 3.141568 -1.570795" xyz="-0.000004 0.011870 0.010526" />
+            <inertia ixx="0.011209496066089" ixy="4.0704043961733e-13" ixz="-1.4456290982822e-05" iyz="-2.8206538680196e-12" izz="0.0061737879202848" iyy="0.0059830438703822" />
+            <mass value="0.33750000596046" />
+        </inertial>
+        <collision name="drawer_top">
+            <origin xyz="-0.000005 0.036011 -0.164999" rpy="3.141588 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+        </collision>
+        <collision name="drawer_top">
+            <origin xyz="-0.000004 -0.019484 0.009002" rpy="-1.570771 3.141598 0.000001" />
+            <geometry>
+                <box size="0.367500 0.356250 0.007125" />
+            </geometry>
+        </collision>
+        <collision name="drawer_top">
+            <origin xyz="-0.180004 0.036016 0.009001" rpy="-1.570802 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+        </collision>
+        <collision name="drawer_top">
+            <origin xyz="0.179996 0.036016 0.009000" rpy="-1.570802 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+        </collision>
+        <collision name="drawer_top">
+            <origin xyz="-0.033003 0.041270 0.193501" rpy="-1.570771 3.141598 0.000001" />
+            <geometry>
+                <box size="0.007500 0.012000 0.007500" />
+            </geometry>
+        </collision>
+        <collision name="drawer_top">
+            <origin xyz="-0.000003 0.040521 0.204001" rpy="-1.570791 3.141568 -1.570796" />
+            <geometry>
+                <cylinder radius="0.0074999998323619" length="0.075000002980232" />
+            </geometry>
+        </collision>
+        <collision name="drawer_top">
+            <origin xyz="0.032997 0.041271 0.193500" rpy="-1.570771 3.141598 0.000001" />
+            <geometry>
+                <box size="0.007500 0.012000 0.007500" />
+            </geometry>
+        </collision>
+        <collision name="drawer_top">
+            <origin xyz="-0.000003 0.036020 0.184500" rpy="3.141588 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+        </collision>
+        <visual name="drawer_top">
+            <origin xyz="-0.000005 0.036011 -0.164999" rpy="3.141588 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+            <material name="drawer_top_material">
+                <color rgba="0.860000 0.812000 0.740000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_top">
+            <origin xyz="-0.000004 -0.019484 0.009002" rpy="-1.570771 3.141598 0.000001" />
+            <geometry>
+                <box size="0.367500 0.356250 0.007125" />
+            </geometry>
+            <material name="drawer_top_material">
+                <color rgba="0.860000 0.812000 0.740000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_top">
+            <origin xyz="-0.180004 0.036016 0.009001" rpy="-1.570802 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+            <material name="drawer_top_material">
+                <color rgba="0.860000 0.812000 0.740000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_top">
+            <origin xyz="0.179996 0.036016 0.009000" rpy="-1.570802 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+            <material name="drawer_top_material">
+                <color rgba="0.860000 0.812000 0.740000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_top">
+            <origin xyz="-0.033003 0.041270 0.193501" rpy="-1.570771 3.141598 0.000001" />
+            <geometry>
+                <box size="0.007500 0.012000 0.007500" />
+            </geometry>
+            <material name="drawer_top_material">
+                <color rgba="0.850000 0.850000 0.850000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_top">
+            <origin xyz="-0.000003 0.040521 0.204001" rpy="-1.570791 3.141568 -1.570796" />
+            <geometry>
+                <cylinder radius="0.0074999998323619" length="0.075000002980232" />
+            </geometry>
+            <material name="drawer_top_material">
+                <color rgba="0.700000 0.700000 0.700000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_top">
+            <origin xyz="0.032997 0.041271 0.193500" rpy="-1.570771 3.141598 0.000001" />
+            <geometry>
+                <box size="0.007500 0.012000 0.007500" />
+            </geometry>
+            <material name="drawer_top_material">
+                <color rgba="0.850000 0.850000 0.850000 1.0" />
+            </material>
+        </visual>
+        <visual name="drawer_top">
+            <origin xyz="-0.000003 0.036020 0.184500" rpy="3.141588 3.141618 1.570800" />
+            <geometry>
+                <box size="0.117600 0.356250 0.007125" />
+            </geometry>
+            <material name="drawer_top_material">
+                <color rgba="0.860000 0.812000 0.740000 1.0" />
+            </material>
+        </visual>
+    </link>
+</robot>

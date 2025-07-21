@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<robot name="robot0:sphere" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- 
+    virtual joint
+  -->
+  <link name="robot0:root">
+    <visual>
+      <origin xyz="0 0 0"/>
+    </visual>
+  </link>
+  <link name="robot0:basex">
+    <visual>
+      <origin xyz="0 0 0"/>
+    </visual>
+  </link>
+  <link name="robot0:basey">
+    <visual>
+      <origin xyz="0 0 0"/>
+    </visual>
+  </link>
+  <joint name="robot0:move_x" type="prismatic">
+    <origin rpy="0 0 0" xyz="0.0 0 0.0"/>
+    <parent link="robot0:root"/>
+    <child link="robot0:basex"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="5" lower="-1." upper="1." velocity="1.0"/>
+  </joint>
+  <joint name="robot0:move_y" type="prismatic">
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+    <parent link="robot0:basex"/>
+    <child link="robot0:basey"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="5" lower="-1." upper="1." velocity="1.0"/>
+  </joint>
+  <joint name="robot0:move_z" type="prismatic">
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+    <parent link="robot0:basey"/>
+    <child link="robot0:sphere_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5" lower="-1." upper="1." velocity="1.0"/>
+  </joint>
+
+  <link name="robot0:sphere_link">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+    </inertial>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>
+

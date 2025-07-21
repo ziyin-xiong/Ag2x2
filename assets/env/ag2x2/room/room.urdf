@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<robot name="room">
+  <link name="room">
+    <visual>
+      <!-- <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="Room.obj" scale="0.01 0.01 0.01"/>
+      </geometry> -->
+
+      <origin xyz="0.0 0.0 0.0" rpy="1.57 0.0 1.57"/>
+      <geometry>
+        <mesh filename="Room.obj" scale="0.03 0.03 0.03"/>
+      </geometry>
+    </visual>
+    <!-- <collision>
+      <origin xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="Room.obj" scale="0.01 0.01 0.01"/>
+      </geometry>
+    </collision> -->
+  </link>
+</robot>

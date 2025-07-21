@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<robot name="Dustpan_4">
+    <link name="dustpan_body">
+        <inertial>
+            <origin xyz="0.0000 0.0 0.37500" rpy="-3.141593 3.141593 -3.141593" />
+            <inertia ixz="0" ixy="0" ixx="20" izz="5" iyz="0" iyy="20" />
+            <mass value="50" />
+        </inertial>
+	<!--	<collision name="Dustpan_4">
+	    <origin xyz="-0.01 0.03 0.0005" rpy="-3.141593 3.141593 -3.141593" />
+	    <geometry>
+		<box size="0.275 0.225 0.0000001" />
+	    </geometry>
+	</collision> -->
+	<collision name="Dustpan_4">
+            <origin rpy="-3.141593 3.141593 -3.141593" xyz="-0.150000 0.030000 0.050000" />
+            <geometry>
+                <box size="0.005000 0.225000 0.100000" />
+            </geometry>
+        </collision>
+        <collision name="Dustpan_4">
+            <origin xyz="0.125000 0.030000 0.050000" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <box size="0.005000 0.225000 0.100000" />
+            </geometry>
+        </collision>
+        <collision name="Dustpan_4">
+            <origin xyz="-0.012500 -0.085000 0.050000" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <box size="0.275000 0.005000 0.100000" />
+            </geometry>
+        </collision>
+        <collision name="Dustpan_4">
+            <origin rpy="-3.141593 3.141593 -3.141593" xyz="-0.012500 -0.035000 0.085000" />
+            <geometry>
+                <box size="0.275000 0.100000 0.010000" />
+            </geometry>
+        </collision>
+        <collision name="Dustpan_5">
+            <origin xyz="0.000049 -0.000026 0.386261" rpy="3.099872 3.129058 1.082189" />
+            <geometry>
+                <cylinder radius="0.015" length="0.65" />
+            </geometry>
+        </collision>
+        <visual name="Dustpan_4">
+            <origin xyz="-0.010294 0.028828 0.050338" rpy="-0.004184 4.681718 -3.137595" />
+            <geometry>
+                <mesh filename="dustpan_robot_base_vis_1.dae" />
+            </geometry>
+            <material name="robot_base_material">
+                <color rgba="0.100000 0.100000 0.100000 1.0" />
+            </material>
+        </visual>
+        <visual name="Dustpan_3">
+            <origin xyz="-0.009350 0.009472 0.050978" rpy="-2.360428 4.669018 2.359958" />
+            <geometry>
+                <mesh filename="dustpan_Dustpan_3_vis_1.dae" />
+            </geometry>
+            <material name="Dustpan_3_material">
+                <color rgba="0.000000 0.000000 0.000000 1.0" />
+            </material>
+        </visual>
+        <collision name="Dustpan_5">
+            <origin xyz="0.000049 -0.000026 0.386261" rpy="3.099872 3.129058 1.082189" />
+            <geometry>
+                <cylinder radius="0.015" length="0.65" />
+            </geometry>
+        </collision>
+        <visual name="Dustpan_5">
+            <origin xyz="0.000049 -0.000026 0.386261" rpy="3.099872 3.129058 1.082189" />
+            <geometry>
+                <mesh filename="dustpan_Dustpan_5_vis_1.dae" />
+            </geometry>
+            <material name="Dustpan_5_material">
+                <color rgba="0.588200 0.588200 0.588200 1.0" />
+            </material>
+        </visual>
+    </link>
+</robot>

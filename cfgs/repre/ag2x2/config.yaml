@@ -1,0 +1,11 @@
+type: "ag2x2"
+desc: "use our checkpoint pre-trained with epic-kitchen agent-agnostich dataset containing hand position"
+
+model: AG2X2
+d_emb: 1024
+batchsize: 4
+
+backbone_type: vit
+similarity_type: l2
+
+ckpt_dir: repre_trainer/logs/lora/ckpts
