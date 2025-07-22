@@ -63,7 +63,8 @@ def set_seed(seed, torch_deterministic=False):
 def retrieve_cfg(args, use_rlg_config=False):
     task_env, task_name, repre = args.task.split("@")
     
-    if task_env == 'ag2x2' and task_name in ['close_door_outward']:
+    if task_env == 'ag2x2' and task_name in ['close_door_outward', 'close_door_inward', 'open_pen_cap', 'lift_pot', 'swing_cup', 'close_scissors', 'push_box',
+                             'put_cube_into_drawer', 'put_cube_into_wave', 'lift_tray', 'press_buttons', 'sweep_dirt', 'straighten_rope']:
         return os.path.join(args.logdir, f"{task_env}/{task_name}@{args.camera}/{repre}@{args.algo}"), f"cfgs/algo/{args.algo}/config.yaml", f"cfgs/task/{task_env}/{task_name}.yaml", f'cfgs/repre/{repre}/config.yaml'
     else:
         warn_task_name()
